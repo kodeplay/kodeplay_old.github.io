@@ -1,0 +1,153 @@
+html, body, p, div, section, li {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+a { color: #3D7FB9; }
+a:hover { color: #215880; }
+
+.container {
+  width: 1024px;
+  margin: 0 auto; }
+
+h1 {
+  color: #666; }
+
+.nav {
+    float: right;
+    width: 700px;
+    height: 30px; 
+}
+.nav ul {
+    list-style: none; 
+}
+.nav ul li {
+    float: right;
+    padding: 3px 10px;
+    margin-left: 10px; 
+}
+
+header {
+  height: 50px;
+  padding: 30px 10px 10px;
+  /* border-bottom: 2px dashed #FEAE01; */
+  background-image: -webkit-radial-gradient(center -8px, ellipse farthest-side, rgba(221, 221, 221, 0.09), transparent);
+  background-image: -moz-radial-gradient(center -8px, ellipse farthest-side, rgba(221, 221, 221, 0.09), transparent);
+  background-image: -o-radial-gradient(center -8px, ellipse farthest-side, rgba(221, 221, 221, 0.09), transparent);
+  background-image: -ms-radial-gradient(center -8px, ellipse farthest-side, rgba(221, 221, 221, 0.09), transparent);
+  background-image: radial-gradient(center -8px, ellipse farthest-side, rgba(221, 221, 221, 0.09), transparent); }
+  header .brand {
+    float: left;
+    width: 300px; }
+  
+
+.block {
+  height: auto;
+  overflow: hidden;
+  margin-top: 20px;
+  padding: 5px 16px; }
+  .block h2 {
+    border-bottom: 1px dashed #666; }
+
+section#about p {
+  margin: 20px 0px; }
+section#about ul#team {
+  list-style: none;
+  height: auto;
+  overflow: hidden; }
+  section#about ul#team li {
+    border: 1px solid #DDDDDD;
+    float: left;
+    height: 220px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding: 5px;
+    width: 160px; }
+    section#about ul#team li h5 {
+      margin-top: 5px; }
+
+
+section#products ul li {
+    margin-top: 10px;
+    width: 45%;
+    height: 200px;
+    float: left;
+    padding: 10px 1%;
+}
+
+section#products ul li p {
+    margin: 20px auto 0;
+    width: 80%;
+}
+
+section#services ul li {
+    
+    width: 45%;
+    height: 200px;
+    float: left;
+   
+}
+
+section#services ul li p {
+    margin: 20px auto 0;
+    width: 80%;
+}
+
+section#contact div#mailChimpForm {
+    height: 220px;
+}
+
+.reservedSpace {
+    border: 1px dashed #ddd;
+    text-align: center;
+}
+
+footer {    
+    clear: both;
+    padding: 10px;
+    height: 24px;
+    background: #f7f7f7;
+}
+
+.subtle {
+    background: #f7f7f7;
+    border-color: #eee;
+    color: #215880;
+    padding: 10px;
+}
+
+.icon {
+    background: url('../images/icons.png');
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.icon.fb { background-position: 0px 0px; }
+.icon.fb:hover { background-position: -1px -23px; }
+.icon.tw { background-position: -23px -1px; }
+.icon.tw:hover { background-position: -23px -23px; }
+
+section#products  ul li.lessheight{
+height:150px;
+}
+
+section#services  ul li.lessheight{
+height:190px;
+}
+.kodetabs{
+width:100%;
+margin-left:20px;
+}
+
+.kodetabs li{
+float:left;
+
+
+}
+
+.tab-pane h3{
+padding:20px;
+padding-top:0px;
+}

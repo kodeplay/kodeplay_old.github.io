@@ -1,0 +1,77 @@
+html, body, p, div, section, li {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto; }
+
+h1 {
+  color: #666; }
+
+header {
+  height: 50px;
+  padding: 30px 10px 10px;
+  /* border-bottom: 2px dashed #FEAE01; */
+  background-image: -webkit-radial-gradient(center -8px, ellipse farthest-side, rgba(221, 221, 221, 0.09), transparent);
+  background-image: -moz-radial-gradient(center -8px, ellipse farthest-side, rgba(221, 221, 221, 0.09), transparent);
+  background-image: -o-radial-gradient(center -8px, ellipse farthest-side, rgba(221, 221, 221, 0.09), transparent);
+  background-image: -ms-radial-gradient(center -8px, ellipse farthest-side, rgba(221, 221, 221, 0.09), transparent);
+  background-image: radial-gradient(center -8px, ellipse farthest-side, rgba(221, 221, 221, 0.09), transparent); }
+  header .brand {
+    float: left;
+    width: 300px; }
+  header .nav {
+    float: right;
+    width: 700px;
+    height: 30px; }
+    header .nav ul {
+      list-style: none; }
+      header .nav ul li {
+        float: right;
+        padding: 3px 10px;
+        margin-left: 10px; }
+
+.block {
+  height: auto;
+  overflow: hidden;
+  margin-top: 20px;
+  padding: 5px 16px; }
+  .block h2 {
+    border-bottom: 1px dashed #666; }
+
+section#about p {
+  margin: 20px 0px; }
+section#about ul#team {
+  list-style: none;
+  height: auto;
+  overflow: hidden; }
+  section#about ul#team li {
+    border: 1px solid #DDDDDD;
+    float: left;
+    height: 200px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding: 5px;
+    width: 160px; }
+    section#about ul#team li h5 {
+      margin-top: 5px; }
+
+
+section#products ul li {
+    width: 45%;
+    height: 175px;
+    float: left;
+    padding: 10px 1%;
+}
+
+section#products ul li p {
+    margin: 20px auto 0;
+    width: 80%;
+}
+
+section#services ul li {
+    margin-top: 10px;
+}
+

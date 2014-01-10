@@ -1,0 +1,10 @@
+$(document).ready(function () {
+    $(".nav a").click(function (e) {
+        e.preventDefault();
+        var link = $(this).attr('href');
+        $(link).hide().prependTo("#main");
+        $(link).slideDown(500);
+        var url = link
+        window.history.pushState({path: url} , null, url);
+    });
+});
