@@ -1,0 +1,112 @@
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+@mixin ls-none {
+    list-style: none;
+}
+
+@mixin ht-fix {
+    height: auto;
+    overflow: hidden;
+}
+
+h1 {
+    color: #666;
+}
+
+$header-bg-color: rgba(221, 221, 221, 0.09);
+
+header {
+    height: 50px;
+    padding: 30px 10px 10px;
+    /* border-bottom: 2px dashed #FEAE01; */
+
+    background-image: -webkit-radial-gradient(center -8px, ellipse farthest-side, $header-bg-color , transparent);
+    background-image: -moz-radial-gradient(center -8px, ellipse farthest-side, $header-bg-color, transparent);
+    background-image: -o-radial-gradient(center -8px, ellipse farthest-side, $header-bg-color, transparent);
+    background-image: -ms-radial-gradient(center -8px, ellipse farthest-side, $header-bg-color, transparent);
+    background-image: radial-gradient(center -8px, ellipse farthest-side, $header-bg-color, transparent);
+
+    .brand {
+        float: left;
+        width: 300px;
+    }
+
+    .nav {
+        float: right;
+        width: 700px;
+        height: 30px;
+        ul {
+            list-style: none;
+            
+            li {
+                float: right;
+                padding: 3px 10px;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+.block {
+    @include ht-fix;
+    margin-top: 20px;
+    padding: 5px 16px;
+
+    h2 {
+        border-bottom: 1px dashed #666;
+    }
+}
+
+section#about {
+    
+    p {
+        margin: 20px 0px;
+    }
+
+    ul#team {
+        @include ls-none;
+        @include ht-fix;
+
+        li {
+            border: 1px solid #DDDDDD;
+            float: left;
+            height: 200px;
+            margin-bottom: 20px;
+            margin-right: 20px;
+            padding: 5px;
+            width: 160px;
+
+            h5 {
+                margin-top: 5px;
+            }
+        }
+    }
+}
+
+section#products {
+
+    ul {
+        @include ls-none;        
+
+        li {
+            clear: both;
+            border: 1px solid red;
+            height: 200px;
+        }
+        
+        li > a {
+            width: 30%;
+            margin-right: 5%;
+            display: inline-block;
+            float: left;
+        }
+
+        li > p {
+            width: 65%;
+            float: left;
+        }
+    }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<meta charset = "utf-8">
+<p>Tada</p>
+<script src = "http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+<style>
+.chart div ,.autochart div{
+font:10px sans-serif;
+background-color:steelblue;
+text-align:right;
+padding:3px;
+margin:1px;
+color:white;
+}
+</style>
+<div class = "chart">
+  <div style = "width:40px;">4</div>
+  <div style = "width:80px;">8</div>
+    <div style = "width:150px;">15</div>
+     <div style = "width:160px;">16</div>
+  <div style = "width:230px;">23</div>
+  <div style = "width:420px;">42</div>
+</div>
+<div class = "autochart">
+
+</div>
+<p>Hello World</p>
+<p>Hello World</p>
+<p>Hello World</p>
+<p>Hello World</p>
+<p>Hello World</p>
+<p>Hello World</p>
+<p>Hello World</p>
+<p>Hello World</p>
+<p>Hello World</p>
+<p>Hello World</p>
+<p class = "numbers">test</p>
+
+
+
+
+
+
+
+
+<script type = "text/javascript">
+ d3.selectAll("p")
+.data([12,16,18,20,22,24,26,28,30,32,34])
+.style("font-size",function(d){return d+"px";});
+
+ var p =  d3.selectAll(".numbers")
+.data([1,2,3])
+
+ p.enter().append("p").attr('class','numbers')
+.text(function(d){return "I am number "+d;});
+
+p.exit().remove()
+
+var data = [4,8,15,16,23,42];
+d3.select(".autochart")
+.selectAll('div')
+.data(data)
+.enter().append("div")
+.style("width",function(d){return d*10+"px";})
+.text(function(d){return d;});
+
+
+
+</script>

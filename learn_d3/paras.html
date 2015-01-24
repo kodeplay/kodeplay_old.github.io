@@ -1,0 +1,29 @@
+<! DOCTYPE HTML>
+<meta charset = "utf-8"/>
+<html lang = "en">
+<head>
+<script src = "http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+</head>
+<body>
+<script type = "text/javascript">
+var dataset = [1,5,10,15,20,25];
+d3.select("body").selectAll("p")
+.data(dataset)
+  .enter()
+  .append("p")
+  .text(function(d){
+      return "i can count to "+d;
+      })
+  .style("color",function(d){
+      if(d > 15)
+      return "red";
+      else
+      return "black";
+      });
+
+
+</script
+</body>
+</html>
+
+
